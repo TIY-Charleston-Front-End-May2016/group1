@@ -1,8 +1,10 @@
-
-
-
-
 ///// Character constructor//////
+
+
+$('a').on('click', function(){
+  event.preventDefault();
+  console.log("i clicked");
+})
 
 
 function Good(opts) {
@@ -13,6 +15,7 @@ function Good(opts) {
   this.attack = function(obstical) {
     // alert(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
     console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
+    obstical.health -= this.weapon.damage;
     if(obstical.health <= 0) {
       // alert(`${obstical.name} swam away!`);
       console.error(`${obstical.name} swam away!`);
@@ -95,3 +98,13 @@ var human = {
 var shark = new Bad(shark);
 var jellyfish = new Bad(jellyfish);
 var human = new Bad(human);
+
+function Weapon(opts) {
+  this.name = opts ? opts.name : 'Sting';
+  this.damage = opts ? opts.damage : Math.floor(Math.random() * 20);
+}
+
+var sting = new Weapon({name: "Sting", damage: 15});
+var bubbles = new Weapon({name: "Bubbles", damage: 30 });
+var bite = new Weapon({name: "Bite", damage: 20});
+var grab = new Weapon({name:"Grab", damage:40})
