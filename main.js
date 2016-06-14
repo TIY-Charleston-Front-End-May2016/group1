@@ -1,3 +1,7 @@
+
+
+
+
 ///// Character constructor//////
 
 
@@ -7,15 +11,18 @@ function Good(opts) {
   this.speed = opts && opts.speed ? opts.speed : 5;
   this.health = opts && opts.health ? opts.health : 100;
   this.attack = function(obstical) {
+    // alert(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
     console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
     if(obstical.health <= 0) {
+      // alert(`${obstical.name} swam away!`);
       console.error(`${obstical.name} swam away!`);
       obstical = null;
     } else {
+      // alert('Health is at: ', obstical.health)
       console.log('Health is at: ', obstical.health)
     }
   }
-  this.weapon = opts && opts.weapon ? opts.weapon 'bubbles'
+  this.weapon = opts && opts.weapon ? opts.weapon : 'bubbles';
 }
 
 
@@ -51,12 +58,15 @@ function Bad(opts) {
   this.speed = opts && opts.speed ? opts.speed : 5;
   this.health = opts && opts.health ? opts.health : 100;
   this.attack = function(goodguy) {
+    // alert(`Lookout! ${this.name} beat ${goodguy.name} with ${this.weapon.name}`)
     console.log(`Lookout! ${this.name} beat ${goodguy.name} with ${this.weapon.name}`)
     goodguy.health -= this.weapon.damage;
     if(goodguy.health <= 0) {
+      // alert(`Oh No! ${goodguy.name} has died.`);
       console.error(`Oh No! ${goodguy.name} has died.`);
       obstical = null;
     } else {
+      // alert("Current Health: ", goodguy.health)
       console.log("Current Health: ", goodguy.health)
     }
     this.weapon = opts && opts.weapon ? opts.weapon : 'sting';
