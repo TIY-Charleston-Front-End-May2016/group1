@@ -1,0 +1,23 @@
+{
+  "name": "hwgamerigganwinstongabe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "dependencies": {
+    "jquery": "^3.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TIY-Charleston-Front-End-May2016/group1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TIY-Charleston-Front-End-May2016/group1/issues"
+  },
+  "homepage": "https://github.com/TIY-Charleston-Front-End-May2016/group1#readme"
+}
