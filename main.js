@@ -40,6 +40,15 @@ function Bad(opts) {
   this.color = opts && opts.color ? opts.color : 'black';
   this.speed = opts && opts.speed ? opts.speed : 5;
   this.health = opts && opts.health ? opts.health : 100;
+  this.attack = function(goodguy) {
+    console.log(`WHY SO SERIOUS?. ${this.name} beat ${goodguy.name} with ${this.weapon.name}`)
+    goodguy.health -= this.weapon.damage;
+    if(hero.health <= 0) {
+      console.error(`${goodguy.name} has died`);
+      enemy = null;
+    } else {
+      console.log("HEALTH IS AT: ", goodguy.health)
+    }
 }
 
 var shark = {
