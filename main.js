@@ -5,6 +5,12 @@
 ///// Character constructor//////
 
 
+$('a').on('click', function(){
+  event.preventDefault();
+  console.log("i clicked");
+})
+
+
 function Good(opts) {
   this.name = opts && opts.name ? opts.name : 'Dori';
   this.color = opts && opts.color ? opts.color : 'neon';
