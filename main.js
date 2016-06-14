@@ -7,16 +7,39 @@ $('a').on('click', function() {
 })
 
 ////Random Selection of Enemy
-// var enemies = ['shark','jellyfish','human'];
-//
-// function randomEnemy (anyListOfEnemies) {
-//   var randomNum= Math.random();
-//   var lengthOfEnemyList = anyListOfEnemies.length;
-//   var lastIndexOfEnemies = lengthOfEnemyList - 1;
-//   var guessEnemy = Math.floor(randomNum * lengthOfEnemyList);
-//   return anyListOfEnemies[guessEnemy];
-// }
-// randomEnemy(enemies);
+var enemies = ['shark','jellyfish','human'];
+
+function randomEnemy (enemyObject) {
+  var randomNum= Math.random();
+  var anyListOfEnemies = Object.keys(enemyObject)
+  var lengthOfEnemyList = anyListOfEnemies.length;
+  var lastIndexOfEnemies = lengthOfEnemyList - 1;
+  var guessEnemy = Math.floor(randomNum * lengthOfEnemyList);
+  var enemyString = anyListOfEnemies[guessEnemy];
+  return enemyObject[enemyString];
+}
+
+var objectOfMyEnemies = {
+  shark: {
+    name: 'shark',
+    color: 'red',
+    speed: 9.3,
+    health: 100,
+  },
+  jellyfish: {
+    name: 'jellyfish',
+    color: 'purple',
+    speed: 5.2,
+    health: 100,
+  },
+  human: {
+    name: 'human',
+    color: 'grey',
+    speed: 8.7,
+    health: 100,
+  }
+}
+console.log(randomEnemy(objectOfMyEnemies));
 
 
 
@@ -86,38 +109,6 @@ function Bad(opts) {
         }
         this.weapon = opts && opts.weapon ? opts.weapon : 'sting';
     }
-}
-
-// function randomEnemy (anyListOfEnemies) {
-//   var randomNum= Math.random()*10;
-//   var enemy = jellyfish
-//   if(randomNum < 3) {
-//     enemy = jellyfish
-//   } else if (randomNum >= 3 && randomNum <= 6) {
-//     enemy = shark
-//   } else {
-//     enemy = human
-//   }
-// };
-
-
-var shark = {
-    name: 'shark',
-    color: 'red',
-    speed: 9.3,
-    health: 100,
-}
-var jellyfish = {
-    name: 'jellyfish',
-    color: 'purple',
-    speed: 5.2,
-    health: 100,
-}
-var human = {
-    name: 'human',
-    color: 'grey',
-    speed: 8.7,
-    health: 100,
 }
 
 
