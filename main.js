@@ -6,6 +6,16 @@ function Good(opts) {
   this.color = opts && opts.color ? opts.color : 'neon';
   this.speed = opts && opts.speed ? opts.speed : 5;
   this.health = opts && opts.health ? opts.health : 100;
+  this.attack = function(obstical) {
+    console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
+    if(obstical.health <= 0) {
+      console.error(`${obstical.name} swam away!`);
+      obstical = null;
+    } else {
+      console.log('Health is at: ', obstical.health)
+    }
+  }
+  this.weapon = opts && opts.weapon ? opts.weapon 'bubbles'
 }
 
 
