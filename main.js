@@ -1,7 +1,3 @@
-
-
-
-
 ///// Character constructor//////
 
 ////Clicking on character name
