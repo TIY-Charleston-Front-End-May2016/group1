@@ -112,8 +112,6 @@ function Bad(opts) {
 }
 
 
-
-
 var shark = new Bad(shark);
 var jellyfish = new Bad(jellyfish);
 var human = new Bad(human);
