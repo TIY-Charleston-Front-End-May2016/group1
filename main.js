@@ -6,6 +6,7 @@ function Good(opts) {
   this.color = opts && opts.color ? opts.color : 'neon';
   this.speed = opts && opts.speed ? opts.speed : 5;
   this.health = opts && opts.health ? opts.health : 100;
+  this.attack = function(obstical)
 }
 
 
