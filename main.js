@@ -1,7 +1,3 @@
-
-
-
-
 ///// Character constructor//////
 
 ////Clicking on character name
@@ -11,16 +7,18 @@ $('a').on('click', function(){
 })
 
 ////Random Selection of Enemy
-// var enemies = ['shark','jellyfish','human'];
-//
-// function randomEnemy (anyListOfEnemies) {
-//   var randomNum= Math.random();
-//   var lengthOfEnemyList = anyListOfEnemies.length;
-//   var lastIndexOfEnemies = lengthOfEnemyList - 1;
-//   var guessEnemy = Math.floor(randomNum * lengthOfEnemyList);
-//   return anyListOfEnemies[guessEnemy];
-// }
-// randomEnemy(enemies);
+var enemies = ['shark','jellyfish','human'];
+
+function randomEnemy (anyListOfEnemies) {
+  var randomNum= Math.random();
+  var lengthOfEnemyList = anyListOfEnemies.length;
+  var lastIndexOfEnemies = lengthOfEnemyList - 1;
+  var guessEnemy = Math.floor(randomNum * lengthOfEnemyList);
+  return anyListOfEnemies[guessEnemy];
+
+}
+
+randomEnemy(enemies);
 
 
 
@@ -92,35 +90,23 @@ function Bad(opts) {
 }
 }
 
-function randomEnemy (anyListOfEnemies) {
-  var randomNum= Math.random();
-  var lengthOfEnemyList = anyListOfEnemies.length;
-  var lastIndexOfEnemies = lengthOfEnemyList - 1;
-  var guessEnemy = Math.floor(randomNum * lengthOfEnemyList);
-  return anyListOfEnemies[guessEnemy];
-}
-randomEnemy(enemies);
-
-var enemies =
-{
-  shark: {
+var shark = {
   name: 'shark',
   color: 'red',
   speed: 9.3,
   health: 100,
-},
-  jellyfish: {
+}
+var jellyfish = {
   name: 'jellyfish',
   color: 'purple',
   speed: 5.2,
   health: 100,
-},
-  human: {
+}
+var human = {
   name: 'human',
   color: 'grey',
   speed: 8.7,
   health: 100,
-},
 }
 
 var shark = new Bad(shark);
