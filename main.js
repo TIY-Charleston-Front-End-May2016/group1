@@ -85,3 +85,13 @@ var human = {
 var shark = new Bad(shark);
 var jellyfish = new Bad(jellyfish);
 var human = new Bad(human);
+
+function Weapon(opts) {
+  this.name = opts ? opts.name : 'Sting';
+  this.damage = opts ? opts.damage : Math.floor(Math.random() * 20);
+}
+
+var sting = new Weapon({name: "Sting", damage: 15});
+var bubbles = new Weapon({name: "Bubbles", damage: 30 });
+var bite = new Weapon({name: "Bite", damage: 20});
+var grab = new Weapon({name:"Grab", damage:40})
