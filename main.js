@@ -13,6 +13,7 @@ function Good(opts) {
   this.attack = function(obstical) {
     // alert(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
     console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
+    obstical.health -= this.weapon.damage;
     if(obstical.health <= 0) {
       // alert(`${obstical.name} swam away!`);
       console.error(`${obstical.name} swam away!`);
