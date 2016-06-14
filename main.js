@@ -15,7 +15,7 @@ function Good(opts) {
       console.log('Health is at: ', obstical.health)
     }
   }
-  this.weapon = opts && opts.weapon ? opts.weapon 'bubbles'
+  this.weapon = opts && opts.weapon ? opts.weapon : 'bubbles';
 }
 
 
