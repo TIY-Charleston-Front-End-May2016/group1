@@ -37,6 +37,27 @@ var findingDori = {
         $('.encounters').removeClass('hidden');
         $('.characterselect').addClass('hidden');
       });
+      $('.treasurechest').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked the treasure chest");
+        $('.abilities').removeClass('hidden').addClass('active');
+        $('.seaweed').addClass('hidden');
+        $('.current').addClass('hidden');
+      });
+      $('.seaweed').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked the seaweed");
+        $('.abilities').removeClass('hidden').addClass('active');
+        $('.treasurechest').addClass('hidden');
+        $('.current').addClass('hidden');
+      });
+      $('.current').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked the seaweed");
+        $('.abilities').removeClass('hidden').addClass('active');
+        $('.treasurechest').addClass('hidden');
+        $('.seaweed').addClass('hidden');
+      });
     }
   }
 

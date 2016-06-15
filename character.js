@@ -23,6 +23,6 @@ class Character {
 
 
 
-let Bruce = new Character({name: 'Bruce',ability1: 'Tail Whip',ability2: 'Barrel Roll',ability3: 'Swim Fast',});
-let Squirt = new Character({name: 'Squirt',ability1: 'Fin Chop',ability2: 'Turtle Spin',ability3: 'Shell Slide'});
-let Bloat = new Character({name: 'Bloat',ability1: 'Spike',ability2: 'De-Puff',ability3: 'Puff Up'});
+let Bruce = new Character({name: 'Bruce',ability1: 'Tail Whip',ability2: 'Barrel Roll',ability3: 'Swim Fast'})
+let Squirt = new Character({name: 'Squirt',ability1: 'Fin Chop',ability2: 'Turtle Spin',ability3: 'Shell Slide'})
+let Bloat = new Character({name: 'Bloat',ability1: 'Spike',ability2: 'De-Puff',ability3: 'Puff Up'})
