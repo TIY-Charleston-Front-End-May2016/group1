@@ -55,14 +55,14 @@ body {
     text-decoration: none;
     color: white;
 }
-.encounters a {
+.encounters h2 {
     text-decoration: none;
     color: white;
     font-size: 3em;
     font-weight: bolder;
 }
 .encounters ul {
-    list-style-type: none; 
+    list-style-type: none;
     text-decoration: none;
     color: white;
     font-size: 2em;
