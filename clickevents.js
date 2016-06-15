@@ -5,6 +5,7 @@ $(document).ready(function() {
 var findingDori = {
     url: "http://tiny-tiny.herokuapp.com/collections/findingDori",
     characterArr: [],
+    
     init: function() {
         findingDori.styling();
         findingDori.events();
@@ -17,7 +18,8 @@ var findingDori = {
       $('.brucepic').on('click', function(){
         event.preventDefault();
         console.log("you clicked bruce's name");
-
+          var character = Bruce;
+          console.log(character);
         $('.encounters').removeClass('hidden');
         $('.characterselect').addClass('hidden');
       });

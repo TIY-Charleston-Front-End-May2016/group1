@@ -11,8 +11,8 @@ let seaweedTangle = new Encounters ({name: 'Tangled in Seaweed',solution: 'abili
 let swiftCurrent = new Encounters ({name: 'Swim through the Swift Current',solution: 'ability3'});
 
 
-if (this === ability1){
-  return true
-} else {
-  return false
-}
+// if (this === ability1){
+//   return true
+// } else {
+//   return false
+// }
