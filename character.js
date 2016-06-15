@@ -4,6 +4,9 @@ class Character {
     this.ability1 = opts.ability1;
     this.ability2 = opts.ability2;
     this.ability2 = opts.ability3;
+}
+}
+
         // alert(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
         // console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
         // obstical.health -= this.weapon.damage;

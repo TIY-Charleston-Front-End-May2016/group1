@@ -1,6 +1,6 @@
 $(document).ready(function() {
     findingDori.init();
-});
+})
 
 var findingDori = {
     url: "http://tiny-tiny.herokuapp.com/collections/findingDori",
@@ -13,6 +13,14 @@ var findingDori = {
         // findingDori.getCharacter();
     },
     events: function() {
+      $('.brucepic').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked bruce's name");
+        $('.abilities').removeClass('hidden').addClass('acitive');
+        $('.characterselection').addClass('hidden');
+      });
+    }
+  }
 
     },
   };
