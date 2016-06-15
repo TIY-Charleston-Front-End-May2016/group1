@@ -55,7 +55,7 @@ var findingDory = {
                 $('ul').addClass('hidden');
                 $('.current').removeClass('hidden');
                 $('.seaweed').addClass('hidden');
-            } 
+            }
         });
 
         $('.current').on('click', function() {
