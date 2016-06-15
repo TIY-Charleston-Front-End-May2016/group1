@@ -60,7 +60,6 @@
 //    event.preventDefault();
 //    console.log("i clicked");
 // })
-
 ////Random Selection of Enemy
 
 function randomEnemy(enemyObject) {
