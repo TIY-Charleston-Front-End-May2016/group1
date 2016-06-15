@@ -9,3 +9,10 @@ class Encounters {
 let treasureChest = new Encounters ({name: 'Open the Treasure Chest',solution: 'ability1'});
 let seaweedTangle = new Encounters ({name: 'Tangled in Seaweed',solution: 'ability2'});
 let swiftCurrent = new Encounters ({name: 'Swim through the Swift Current',solution: 'ability3'});
+
+
+if (this === ability1){
+  return true
+} else {
+  return false
+}
