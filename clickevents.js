@@ -32,7 +32,6 @@ var findingDory = {
 
             findingDory.userChoiceVals.forEach(function(element, index) {
                 $('ul').append(`<a class="ability${index + 1}" href="#"><li>${element}</li></a>`);
-
             })
 
 
