@@ -1,3 +1,4 @@
+// gabe.attack(randomEnemy(objectOfMyEnemies))
 ///// Character constructor//////
 
 ////Clicking on character name
