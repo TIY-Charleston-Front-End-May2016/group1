@@ -12,16 +12,19 @@ body {
     font-family: Whitney;
 }
 .characterselect {
-    background-color: white;
-    padding-bottom: 2%;
+  display: inline;
+  width: 100%;
+  padding-bottom: 2%;
 }
 .characterselect h1 {
-    font-family: Waltograph;
-    font-size: 3em;
-    text-align: center;
-    margin-top: 3%;
-    padding: 4%;
-    margin: 0 auto;
+  font-weight: 100;
+  color: coral;
+  font-family: Waltograph;
+  font-size: 4.5em;
+  text-align: center;
+  margin-top: 3%;
+  padding: 4%;
+  margin: 0 auto;
 }
 .characterselect img {
     display: inline-block;
@@ -30,11 +33,12 @@ body {
     border-radius: 5px;
 }
 .characterselect a {
-    font-family: Whitney, sans-serif;
-    text-decoration: none;
-    color: aqua;
-    font-size: 2.3rem;
-    text-align: center;
+  margin-left: 3%;
+  font-family: Whitney, sans-serif;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 2.3rem;
+  text-align: center;
 }
 .hidden {
     display: none;
@@ -50,4 +54,19 @@ body {
 .encounters a {
     text-decoration: none;
     color: white;
+}
+.encounters a {
+    text-decoration: none;
+    color: white;
+    font-size: 3em;
+    font-weight: bolder;
+}
+.encounters ul {
+    list-style-type: none; 
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    font-weight: bolder;
+    padding: 5%;
+    margin: 1px;
 }
