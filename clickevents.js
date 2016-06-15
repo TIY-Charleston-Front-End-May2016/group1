@@ -16,7 +16,8 @@ var findingDori = {
       $('.brucepic').on('click', function(){
         event.preventDefault();
         console.log("you clicked bruce's name");
-        $('.abilities').removeClass('hidden').addClass('acitive');
+
+        $('.encounters').removeClass('hidden');
         $('.characterselect').addClass('hidden');
       });
     }
