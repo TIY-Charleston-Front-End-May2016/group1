@@ -43,6 +43,12 @@ var findingDori = {
         $('.abilities').removeClass('hidden').addClass('active');
         $('.seaweed').addClass('hidden');
         $('.current').addClass('hidden');
+        $('.bruceability3').addClass('hidden');
+        $('.bruceability2').addClass('hidden');
+        $('.squirtability3').addClass('hidden');
+        $('.squirtability2').addClass('hidden');
+        $('.bloatability3').addClass('hidden');
+        $('.bloatability2').addClass('hidden');
       });
       $('.seaweed').on('click', function(){
         event.preventDefault();
@@ -50,6 +56,12 @@ var findingDori = {
         $('.abilities').removeClass('hidden').addClass('active');
         $('.treasurechest').addClass('hidden');
         $('.current').addClass('hidden');
+        $('.bruceability3').addClass('hidden');
+        $('.bruceability1').addClass('hidden');
+        $('.squirtability3').addClass('hidden');
+        $('.squirtability1').addClass('hidden');
+        $('.bloatability3').addClass('hidden');
+        $('.bloatability1').addClass('hidden');
       });
       $('.current').on('click', function(){
         event.preventDefault();
@@ -57,6 +69,15 @@ var findingDori = {
         $('.abilities').removeClass('hidden').addClass('active');
         $('.treasurechest').addClass('hidden');
         $('.seaweed').addClass('hidden');
+        $('.bruceability2').addClass('hidden');
+        $('.bruceability1').addClass('hidden');
+        $('.squirtability2').addClass('hidden');
+        $('.squirtability1').addClass('hidden');
+        $('.bloatability2').addClass('hidden');
+        $('.bloatability1').addClass('hidden');
+      });
+      $('.bruceability1').on('click', function(){
+        console.log(this);
       });
     }
   }
