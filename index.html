@@ -3,17 +3,42 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
     <title></title>
 </head>
 
 <body>
-    <a class="atag" href="#">Gabe</a>
-    <a href="#">Winston</a>
-    <a href="#">Riggan</a>
+
+    <section class="characterSelect">
+        <h1> Choose your Character </h1>
+        <a href="#">Gabe</a>
+        <a href="#">Winston</a>
+        <a href="#">Riggan</a>
+    </section>
+    <section class="chooseWeapon">
+        <h1> Choose Your Weapon </h1>
+        <a class="sting" href="#">Sting</a>
+        <a class="bite" href="#">Bite</a>
+    </section>
+    <section class="journey">
+        <h1>There are three enemies keeping you from Dory</h1>
+        <section class="enemy1">
+            <a class="randomEnemy" href="#">Random Enemy</a>
+        </section>
+        <section class="enemy2">
+            <a class="randomEnemy" href="#">Random Enemy</a>
+        </section>
+        <section class="enemy3">
+            <a class="randomEnemy" href="#">Random Enemy</a>
+        </section>
+    </section>
 
     <script src="node_modules/jquery/dist/jquery.js"></script>
     <script src="main.js" type="text/javascript"></script>
-    <script src="app.js" type="text/javascript"></script>
+    <script src="clickevents.js" type="text/javascript"></script>
+    <script src="character.js" type="text/javascript"></script>
+    <script src="encounters.js" type="text/javascript"></script>
+
 </body>
 
 </html>
