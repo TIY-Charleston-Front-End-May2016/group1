@@ -7,7 +7,6 @@ $('a').on('click', function() {
 })
 
 ////Random Selection of Enemy
-var  = ['shark', 'jellyfish', 'human'];
 
 function randomEnemy(enemyObject) {
    var randomNum = Math.random();
