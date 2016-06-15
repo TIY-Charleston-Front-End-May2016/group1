@@ -35,3 +35,7 @@ body {
   text-decoration: none;
   text-shadow: 2px;
 }
+
+.hidden {
+  display: none;
+}

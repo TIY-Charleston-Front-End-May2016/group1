@@ -1,6 +1,6 @@
 $(document).ready(function() {
     findingDori.init();
-});
+})
 
 var findingDori = {
     url: "http://tiny-tiny.herokuapp.com/collections/findingDori",
@@ -10,11 +10,36 @@ var findingDori = {
         findingDori.events();
     },
     styling: function() {
-        findingDori.getCharacter();
+        // findingDori.getCharacter();
     },
     events: function() {
+      // bruce
+      $('.brucepic').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked bruce's name");
 
-    },
+        $('.encounters').removeClass('hidden');
+        $('.characterselect').addClass('hidden');
+      });
+      // Squirt
+      $('.squirtpic').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked squirts's name");
+
+        $('.encounters').removeClass('hidden');
+        $('.characterselect').addClass('hidden');
+      });
+      // Bloat
+      $('.bloatpic').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked bloat's name");
+
+        $('.encounters').removeClass('hidden');
+        $('.characterselect').addClass('hidden');
+      });
+    }
+  }
+
     // createCharacter: function(whateverYouWantToGiveMe) {
     //     $.ajax({
     //         url: findingDori.url,
