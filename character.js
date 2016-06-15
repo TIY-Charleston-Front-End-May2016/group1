@@ -18,9 +18,8 @@ class Character {
         //     // alert('Health is at: ', obstical.health)
         //     console.log('Health is at: ', obstical.health)
         // }
-    }
     // this.weapon = opts && opts.weapon ? opts.weapon : 'bubbles';
-}
+
 
 
 

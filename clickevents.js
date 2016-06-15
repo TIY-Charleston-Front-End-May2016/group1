@@ -22,8 +22,6 @@ var findingDori = {
     }
   }
 
-    },
-  };
     // createCharacter: function(whateverYouWantToGiveMe) {
     //     $.ajax({
     //         url: findingDori.url,
