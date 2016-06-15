@@ -20,34 +20,53 @@ var findingDory = {
         $('.brucepic').on('click', function() {
             event.preventDefault();
             console.log("you clicked bruce's name");
-
             var stringIClicked = $(this).text()
             var heroNameFromObject = CharacaterChoices[stringIClicked];
             findingDory.setUserChoices(heroNameFromObject);
-
             $('.encounters').removeClass('hidden');
             $('.characterselect').addClass('hidden');
+            $('.seaweed').addClass('hidden');
+            $('.current').addClass('hidden');
+            $('.abilities').removeClass('hidden');
+            // userChoice.forEach(function(element,idx,arr){
+            // $('ul').append(`<li>hey</li>`);
+            // });
+
         });
         // Squirt
         $('.squirtpic').on('click', function() {
-            event.preventDefault();
-            console.log("you clicked squirts's name");
-            var stringIClicked = $(this).text()
-            var heroNameFromObject = CharacaterChoices[stringIClicked];
-            findingDory.setUserChoices(heroNameFromObject);
-            $('.encounters').removeClass('hidden');
-            $('.characterselect').addClass('hidden');
-        });
+          event.preventDefault();
+          console.log("you clicked bruce's name");
+          var stringIClicked = $(this).text()
+          var heroNameFromObject = CharacaterChoices[stringIClicked];
+          findingDory.setUserChoices(heroNameFromObject);
+          $('.encounters').removeClass('hidden');
+          $('.characterselect').addClass('hidden');
+          $('.seaweed').addClass('hidden');
+          $('.current').addClass('hidden');
+          $('.abilities').removeClass('hidden');
+          // userChoice.forEach(function(element,idx,arr){
+          // $('ul').append(`<li>hey</li>`);
+          // });
+
+      });
         // Bloat
         $('.bloatpic').on('click', function() {
-            event.preventDefault();
-            console.log("you clicked bloat's name");
-            var stringIClicked = $(this).text()
-            var heroNameFromObject = CharacaterChoices[stringIClicked];
-            findingDory.setUserChoices(heroNameFromObject);
-            $('.encounters').removeClass('hidden');
-            $('.characterselect').addClass('hidden');
-        });
+          event.preventDefault();
+          console.log("you clicked bruce's name");
+          var stringIClicked = $(this).text()
+          var heroNameFromObject = CharacaterChoices[stringIClicked];
+          findingDory.setUserChoices(heroNameFromObject);
+          $('.encounters').removeClass('hidden');
+          $('.characterselect').addClass('hidden');
+          $('.seaweed').addClass('hidden');
+          $('.current').addClass('hidden');
+          $('.abilities').removeClass('hidden');
+          // userChoice.forEach(function(element,idx,arr){
+          // $('ul').append(`<li>hey</li>`);
+          // });
+
+      });
         $('.treasurechest').on('click', function() {
             event.preventDefault();
             console.log("you clicked the treasure chest");
