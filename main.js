@@ -44,9 +44,9 @@ console.log(randomEnemy(objectOfMyEnemies));
 
 
 
-function Good(opts) {
-    this.name = opts && opts.name ? opts.name : 'Dori';
-    this.color = opts && opts.color ? opts.color : 'neon';
+class Characters {
+    constructor(ops)
+    this.name = opts.name || 'Dori';
     this.speed = opts && opts.speed ? opts.speed : 5;
     this.health = opts && opts.health ? opts.health : 100;
     this.attack = function(obstical) {
