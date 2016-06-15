@@ -29,7 +29,7 @@ var findingDory = {
             $('.current').addClass('hidden');
             $('.abilities').removeClass('hidden');
             // userChoice.forEach(function(element,idx,arr){
-            // $('ul').append(`<li>hey</li>`);
+            $('ul').append(`<li>${findingDory.userChoice.ability2}</li>`);
             // });
 
         });
