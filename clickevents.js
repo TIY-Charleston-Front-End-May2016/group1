@@ -10,11 +10,12 @@ var findingDori = {
         findingDori.events();
     },
     styling: function() {
-        findingDori.getCharacter();
+        // findingDori.getCharacter();
     },
     events: function() {
 
     },
+  };
     // createCharacter: function(whateverYouWantToGiveMe) {
     //     $.ajax({
     //         url: findingDori.url,
