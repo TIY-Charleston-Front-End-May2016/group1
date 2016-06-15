@@ -1,5 +1,39 @@
+@font-face {
+  font-family: Waltograph;
+  src: url("./waltograph/Waltograph/waltograph42.otf");
+}
+@font-face {
+  font-family: Whitney;
+  src: url("./Whitney/Whitney/Whitney-Light.otf");
+}
+
+
 body {
   background-color: lightblue;
+  font-family: Whitney;
+}
+
+
+.characterselect {
+  background-color: white;
+  font-family: Waltograph;
+  padding-bottom: 2%;
+}
+.characterselect h1 {
+    text-align: center;
+    padding: 2%;
+    margin: 0 auto;
+}
+.characterselect img {
+  display: inline-block;
+  width: 29%;
+  margin-left: 26px;
+  border-radius: 5px;
+}
+.characterselect a {
+  font-size: 1.4em;
+  text-decoration: none;
+  text-shadow: 2px;
 }
 
 .hidden {
