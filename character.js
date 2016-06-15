@@ -3,7 +3,7 @@ class Character {
     this.name = opts.name || 'Dory';
     this.ability1 = opts.ability1;
     this.ability2 = opts.ability2;
-    this.ability2 = opts.ability3;
+    this.ability3 = opts.ability3;
 }
 }
 
