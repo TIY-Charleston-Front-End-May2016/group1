@@ -8,8 +8,7 @@
 </head>
 
 <body>
-
-    <section class="characterSelect">
+    <section class="characterselect">
         <h1> Welcome to Finding Dory! Please Choose your Character </h1>
         <img src="images/bruce.png" alt="Bruce" />
         <a href="#">Bruce</a>
@@ -18,29 +17,38 @@
         <img src="images/bloat.png" alt="Bloat" />
         <a href="#">Bloat</a>
     </section>
-    <section class="chooseWeapon">
-        <h1> Choose Your Weapon </h1>
-        <a class="sting" href="#">Sting</a>
-        <a class="bite" href="#">Bite</a>
-    </section>
-    <section class="journey">
-        <h1>There are three enemies keeping you from Dory</h1>
-        <section class="enemy1">
-            <a class="randomEnemy" href="#">Random Enemy</a>
+    <section class="encounters">
+        <div class="treasurechest">
+            <h2><a href="#">Your job is to open the treasure chest</a></h2>
+        </div>
+        <div class="seaweed">
+            <h2><a href="#">Oh no! You're tangled in seaweed. Good luck finding your way out!</a></h2>
+        </div>
+        <div class="current">
+            <h2><a href="#">There's a swift current ahead. You need to swim your way to safety!</a></h2>
+        </div>
+        <section class="abilities">
+            <div class="bruceabilities">
+                <h2><a class= "bruceability1" href="#">Tail Whip</a></h2>
+                <h2><a class= "bruceability2" href="#">Barrel Roll</a></h2>
+                <h2><a class= "bruceability3" href="#">Swim Fast</a></h2>
+            </div>
+            <div class="squirtbilities">
+                <h2><a class= "squirtability1" href="#">Fin Chop</a></h2>
+                <h2><a class= "squirtability2" href="#">Turtle Spin</a></h2>
+                <h2><a class= "squirtability3" href="#">Shell Slidebloat</a></h2>
+            </div>
+            <div class="bloatabilities">
+                <h2><a class= "bloatability1" href="#">Spike</a></h2>
+                <h2><a class= "bloatability2" href="#">De-Puff</a></h2>
+                <h2><a class= "bloatability3" href="#">Puff Up</a></h2>
+            </div>
         </section>
-        <section class="enemy2">
-            <a class="randomEnemy" href="#">Random Enemy</a>
-        </section>
-        <section class="enemy3">
-            <a class="randomEnemy" href="#">Random Enemy</a>
-        </section>
-    </section>
-
-    <script src="node_modules/jquery/dist/jquery.js"></script>
-    <script src="main.js" type="text/javascript"></script>
-    <script src="clickevents.js" type="text/javascript"></script>
-    <script src="character.js" type="text/javascript"></script>
-    <script src="encounters.js" type="text/javascript"></script>
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="main.js" type="text/javascript"></script>
+        <script src="clickevents.js" type="text/javascript"></script>
+        <script src="character.js" type="text/javascript"></script>
+        <script src="encounters.js" type="text/javascript"></script>
 
 </body>
 
