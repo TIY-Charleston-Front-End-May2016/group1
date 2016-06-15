@@ -46,7 +46,6 @@ console.log(randomEnemy(objectOfMyEnemies));
 
 function Good(opts) {
     this.name = opts && opts.name ? opts.name : 'Dori';
-    this.color = opts && opts.color ? opts.color : 'neon';
     this.speed = opts && opts.speed ? opts.speed : 5;
     this.health = opts && opts.health ? opts.health : 100;
     this.attack = function(obstical) {
@@ -66,19 +65,19 @@ function Good(opts) {
 }
 
 
-var winston = {
-    name: 'winston',
-    color: 'yellow',
+let Bruce = {
+    name: 'Bruce',
+    ability1: 'yellow',
     speed: 8.3,
     health: 100,
 }
-var riggan = {
+let Squirt = {
     name: 'riggan',
     color: 'blue',
     speed: 3.2,
     health: 100,
 }
-var gabe = {
+let Bloat = {
     name: 'gabe',
     color: 'pink',
     speed: 1.7,
