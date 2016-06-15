@@ -7,6 +7,7 @@ var findingDory = {
     characterArr: [],
     userChoice: null,
     userChoiceAbilites: null,
+    userChoiceVals: null,
     init: function() {
         findingDory.styling();
         findingDory.events();
@@ -27,45 +28,53 @@ var findingDory = {
             $('.seaweed').addClass('hidden');
             $('.current').addClass('hidden');
             $('.abilities').removeClass('hidden');
-            // userChoice.forEach(function(element,idx,arr){
-            // $('ul').append(`<li>hey</li>`);
+
+            findingDory.userChoiceVals.forEach(function(element, index) {
+                $('ul').append(`<a class="ability${index + 1}" href="#"><li>${element}</li></a>`);
+            })
+
             // });
 
         });
+        $('ul').on('click', '.ability1', function() {
+            console.log('youclicked');
+        });
         // Squirt
         $('.squirtpic').on('click', function() {
-          event.preventDefault();
-          console.log("you clicked bruce's name");
-          var stringIClicked = $(this).text()
-          var heroNameFromObject = CharacaterChoices[stringIClicked];
-          findingDory.setUserChoices(heroNameFromObject);
-          $('.encounters').removeClass('hidden');
-          $('.characterselect').addClass('hidden');
-          $('.seaweed').addClass('hidden');
-          $('.current').addClass('hidden');
-          $('.abilities').removeClass('hidden');
-          // userChoice.forEach(function(element,idx,arr){
-          // $('ul').append(`<li>hey</li>`);
-          // });
+            event.preventDefault();
+            console.log("you clicked bruce's name");
+            var stringIClicked = $(this).text()
+            var heroNameFromObject = CharacaterChoices[stringIClicked];
+            findingDory.setUserChoices(heroNameFromObject);
+            $('.encounters').removeClass('hidden');
+            $('.characterselect').addClass('hidden');
+            $('.seaweed').addClass('hidden');
+            $('.current').addClass('hidden');
+            $('.abilities').removeClass('hidden');
 
-      });
+            findingDory.userChoiceVals.forEach(function(element, index) {
+                $('ul').append(`<a class="ability${index + 1}" href="#"><li>${element}</li></a>`);
+            })
+
+        });
         // Bloat
         $('.bloatpic').on('click', function() {
-          event.preventDefault();
-          console.log("you clicked bruce's name");
-          var stringIClicked = $(this).text()
-          var heroNameFromObject = CharacaterChoices[stringIClicked];
-          findingDory.setUserChoices(heroNameFromObject);
-          $('.encounters').removeClass('hidden');
-          $('.characterselect').addClass('hidden');
-          $('.seaweed').addClass('hidden');
-          $('.current').addClass('hidden');
-          $('.abilities').removeClass('hidden');
-          // userChoice.forEach(function(element,idx,arr){
-          // $('ul').append(`<li>hey</li>`);
-          // });
+            event.preventDefault();
+            console.log("you clicked bruce's name");
+            var stringIClicked = $(this).text()
+            var heroNameFromObject = CharacaterChoices[stringIClicked];
+            findingDory.setUserChoices(heroNameFromObject);
+            $('.encounters').removeClass('hidden');
+            $('.characterselect').addClass('hidden');
+            $('.seaweed').addClass('hidden');
+            $('.current').addClass('hidden');
+            $('.abilities').removeClass('hidden');
 
-      });
+            findingDory.userChoiceVals.forEach(function(element, index) {
+                $('ul').append(`<a class="ability${index + 1}" href="#"><li>${element}</li></a>`);
+            })
+
+        });
         $('.treasurechest').on('click', function() {
             event.preventDefault();
             console.log("you clicked the treasure chest");
@@ -113,6 +122,9 @@ var findingDory = {
     setUserChoices(heroName) {
         findingDory.userChoice = heroName;
         findingDory.userChoiceAbilites = Object.keys(findingDory.userChoice).splice(1, 4);
+        findingDory.userChoiceVals = findingDory.userChoiceAbilites.map(function(element) {
+            return findingDory.userChoice[element]
+        });
     }
 }
 
