@@ -17,7 +17,7 @@ var findingDori = {
         event.preventDefault();
         console.log("you clicked bruce's name");
         $('.abilities').removeClass('hidden').addClass('acitive');
-        $('.characterselection').addClass('hidden');
+        $('.characterselect').addClass('hidden');
       });
     }
   }
