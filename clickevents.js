@@ -13,7 +13,7 @@ var findingDori = {
         findingDori.getCharacter();
     },
     events: function() {
-      $('.brucepic, .squirtpic, .bloatpic').on('click', function(){
+      $('.brucepic').on('click', function(){
         event.preventDefault();
         console.log("you clicked bruce's name");
         $('.abilities').removeClass('hidden').addClass('acitive');
