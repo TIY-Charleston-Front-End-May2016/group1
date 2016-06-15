@@ -8,7 +8,7 @@ $('a').on('click', function() {
 })
 
 ////Random Selection of Enemy
-var enemies = ['shark', 'jellyfish', 'human'];
+var  = ['shark', 'jellyfish', 'human'];
 
 function randomEnemy(enemyObject) {
     var randomNum = Math.random();
@@ -41,82 +41,3 @@ var objectOfMyEnemies = {
     }
 }
 console.log(randomEnemy(objectOfMyEnemies));
-
-
-
-class Character {
-    constructor(opts)
-    this.name = opts.name || 'Dory';
-    this.ability1 = opts.ability1;
-    this.ability2 = opts.ability2;
-    this.ability2 = opts.ability3;
-        // alert(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
-        console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
-        obstical.health -= this.weapon.damage;
-        if (obstical.health <= 0) {
-            // alert(`${obstical.name} swam away!`);
-            console.error(`${obstical.name} swam away!`);
-            obstical = null;
-        } else {
-            // alert('Health is at: ', obstical.health)
-            console.log('Health is at: ', obstical.health)
-        }
-    }
-    this.weapon = opts && opts.weapon ? opts.weapon : 'bubbles';
-}
-
-
-let Bruce = new Character(name: 'Bruce',ability1: 'Tail Whip',ability2: 'Barrel Roll',ability3: 'Swim Fast';)
-let Squirt = new Character(name: 'Squirt',ability1: 'Fin Chop',ability2: 'Turtle Spin',ability3: 'Shell Slide';)
-let Bloat = new Character(name: 'Bloat',ability1: 'Spike',ability2: 'De-Puff',ability3: 'Puff Up';)
-
-
-
-
-function Bad(opts) {
-    this.name = opts && opts.name ? opts.name : 'Evil Dori';
-    this.color = opts && opts.color ? opts.color : 'black';
-    this.speed = opts && opts.speed ? opts.speed : 5;
-    this.health = opts && opts.health ? opts.health : 100;
-    this.attack = function(goodguy) {
-        // alert(`Lookout! ${this.name} beat ${goodguy.name} with ${this.weapon.name}`)
-        console.log(`Lookout! ${this.name} beat ${goodguy.name} with ${this.weapon.name}`)
-        goodguy.health -= this.weapon.damage;
-        if (goodguy.health <= 0) {
-            // alert(`Oh No! ${goodguy.name} has died.`);
-            console.error(`Oh No! ${goodguy.name} has died.`);
-            obstical = null;
-        } else {
-            // alert("Current Health: ", goodguy.health)
-            console.log("Current Health: ", goodguy.health)
-        }
-        this.weapon = opts && opts.weapon ? opts.weapon : 'sting';
-    }
-}
-
-
-var shark = new Bad(shark);
-var jellyfish = new Bad(jellyfish);
-var human = new Bad(human);
-
-function Weapon(opts) {
-    this.name = opts ? opts.name : 'Sting';
-    this.damage = opts ? opts.damage : Math.floor(Math.random() * 20);
-}
-
-var sting = new Weapon({
-    name: "Sting",
-    damage: 15
-});
-var bubbles = new Weapon({
-    name: "Bubbles",
-    damage: 30
-});
-var bite = new Weapon({
-    name: "Bite",
-    damage: 20
-});
-var grab = new Weapon({
-    name: "Grab",
-    damage: 40
-})
