@@ -44,6 +44,20 @@ var findingDori = {
         $('.seaweed').addClass('hidden');
         $('.current').addClass('hidden');
       });
+      $('.seaweed').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked the seaweed");
+        $('.abilities').removeClass('hidden').addClass('active');
+        $('.treasurechest').addClass('hidden');
+        $('.current').addClass('hidden');
+      });
+      $('.current').on('click', function(){
+        event.preventDefault();
+        console.log("you clicked the seaweed");
+        $('.abilities').removeClass('hidden').addClass('active');
+        $('.treasurechest').addClass('hidden');
+        $('.seaweed').addClass('hidden');
+      });
     }
   }
 
