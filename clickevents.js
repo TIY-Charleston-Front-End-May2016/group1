@@ -10,7 +10,7 @@ var findingDori = {
         findingDori.events();
     },
     styling: function() {
-        findingDori.getCharacter();
+        // findingDori.getCharacter();
     },
     events: function() {
       $('.brucepic').on('click', function(){
@@ -21,6 +21,9 @@ var findingDori = {
       });
     }
   }
+
+    },
+  };
     // createCharacter: function(whateverYouWantToGiveMe) {
     //     $.ajax({
     //         url: findingDori.url,
