@@ -1,3 +1,4 @@
+// gabe.attack(randomEnemy(objectOfMyEnemies))
 ///// Character constructor//////
 
 ////Clicking on character name
@@ -137,16 +138,3 @@ var grab = new Weapon({
     name: "Grab",
     damage: 40
 })
-
-
-var randomEnemy = function() {
-    var randomNum = Math.random() * 10;
-    var enemy = "jellyfish"
-    if (randomNum < 3) {
-        enemy = "jellyfish"
-    } else if (randomNum >= 3 && randomNum <= 6) {
-        enemy = "shark"
-    } else {
-        enemy = "human"
-    }
-};
