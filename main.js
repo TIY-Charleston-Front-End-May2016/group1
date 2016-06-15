@@ -44,12 +44,12 @@ console.log(randomEnemy(objectOfMyEnemies));
 
 
 
-class Characters {
-    constructor(ops)
-    this.name = opts.name || 'Dori';
-    this.speed = opts && opts.speed ? opts.speed : 5;
-    this.health = opts && opts.health ? opts.health : 100;
-    this.attack = function(obstical) {
+class Character {
+    constructor(opts)
+    this.name = opts.name || 'Dory';
+    this.ability1 = opts.ability1;
+    this.ability2 = opts.ability2;
+    this.ability2 = opts.ability3;
         // alert(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
         console.log(`Yeah! ${this.name} hit ${obstical.name} with ${this.weapon.name}`)
         obstical.health -= this.weapon.damage;
@@ -66,28 +66,10 @@ class Characters {
 }
 
 
-var winston = {
-    name: 'winston',
-    color: 'yellow',
-    speed: 8.3,
-    health: 100,
-}
-var riggan = {
-    name: 'riggan',
-    color: 'blue',
-    speed: 3.2,
-    health: 100,
-}
-var gabe = {
-    name: 'gabe',
-    color: 'pink',
-    speed: 1.7,
-    health: 100,
-}
+let Bruce = new Character(name: 'Bruce',ability1: 'Tail Whip',ability2: 'Barrel Roll',ability3: 'Swim Fast';)
+let Squirt = new Character(name: 'Squirt',ability1: 'Fin Chop',ability2: 'Turtle Spin',ability3: 'Shell Slide';)
+let Bloat = new Character(name: 'Bloat',ability1: 'Spike',ability2: 'De-Puff',ability3: 'Puff Up';)
 
-var winston = new Good(winston);
-var riggan = new Good(riggan);
-var gabe = new Good(gabe);
 
 
 
