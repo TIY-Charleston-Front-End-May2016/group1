@@ -42,6 +42,8 @@ var findingDory = {
                 $('ul').addClass('hidden');
                 $('.seaweed').removeClass('hidden');
                 $('.treasurechest').addClass('hidden');
+                // $('.treasurepic').removeClass('hidden');
+
             }
         });
 
@@ -55,6 +57,7 @@ var findingDory = {
                 $('ul').addClass('hidden');
                 $('.current').removeClass('hidden');
                 $('.seaweed').addClass('hidden');
+                // $('.seaweedpic').removeClass('hidden');
               }
         });
 
@@ -68,7 +71,9 @@ var findingDory = {
                 $('.current').addClass('hidden');
                 $('.treasurechest').addClass('hidden');
                 $('.win').removeClass('hidden');
-              } 
+                // $('.wavepic').removeClass('hidden');
+
+              }
         });
 
 

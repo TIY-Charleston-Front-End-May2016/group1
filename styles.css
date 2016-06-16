@@ -28,7 +28,7 @@ body {
 }
 .characterselect img {
     display: inline-block;
-    width: 22%;
+    width: 20%;
     margin-left: 26px;
     border-radius: 5px;
 }
@@ -71,8 +71,30 @@ body {
     margin: 1px;
 }
 
-.win ul {
+.win h1 {
   color: white;
   font-size: 3em;
   text-align: center;
+}
+.seaweedpic {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  margin right: 15px;
+  width: 25%;
+}
+.wavespic {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  margin right: 15px;
+  width: 25%;
+
+}
+.treasurepic {
+  display: inline-block;
+  float: right;
+  margin-top: 0;
+  margin right: 15px;
+  width: 25%;
 }
