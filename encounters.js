@@ -6,6 +6,7 @@ class Encounters {
 }
 
 
+
 let treasureChest = new Encounters({
     name: 'Open the Treasure Chest',
     solution: 'ability1'
