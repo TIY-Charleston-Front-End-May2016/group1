@@ -12,40 +12,41 @@ body {
     font-family: Whitney;
 }
 .characterselect {
-  display: inline;
-  width: 100%;
-  padding-bottom: 2%;
+    justify-content: center;
+    display: inline;
+    width: 100%;
+    padding-bottom: 2%;
 }
 .characterselect h1 {
-  font-weight: 100;
-  color: coral;
-  font-family: Waltograph;
-  font-size: 4.5em;
-  text-align: center;
-  margin-top: 3%;
-  padding: 4%;
-  margin: 0 auto;
+    font-weight: 100;
+    color: coral;
+    font-family: Waltograph;
+    font-size: 4.5em;
+    text-align: center;
+    margin-top: 3%;
+    padding: 4%;
+    margin: 0 auto;
 }
 .characterselect img {
     display: inline-block;
-    width: 22%;
+    width: 20%;
     margin-left: 26px;
     border-radius: 5px;
 }
 .characterselect a {
-  margin-left: 3%;
-  font-family: Whitney, sans-serif;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  font-size: 2.3rem;
-  text-align: center;
+    margin-left: 3%;
+    font-family: Whitney, sans-serif;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 2.3rem;
+    text-align: center;
 }
-.characterselect a p{
-  width: 4%;
-  position: relative;
-  display: inline-flex;
-  margin-left: -113px;
-  vertical-align: super;
+.characterselect a p {
+    width: 4%;
+    position: relative;
+    display: inline-flex;
+    margin-left: -113px;
+    vertical-align: super;
 }
 .hidden {
     display: none;
@@ -77,8 +78,11 @@ body {
     padding: 5%;
     margin: 1px;
 }
-
-win h1 {
-  color:white;
-  size: 7em;
+.brucepic img {
+    margin-left: 230px;
+}
+.win h1 {
+    text-align: center;
+    color: white;
+    font-size: 6em;
 }
