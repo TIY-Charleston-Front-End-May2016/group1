@@ -1,0 +1,22 @@
+.seaweedpic{
+  float: right;
+  margin-top: 0;
+  margin right: 15px;
+}
+.wavespic{
+  float: right;
+  margin-top: 0;
+  margin right: 15px;
+}
+.treasurepic{
+  float: right;
+  margin-top: 0;
+  margin right: 15px;
+}
+
+
+$('.treasurepic').removeClass('hidden');
+
+$('.wavepic').removeClass('hidden');
+
+$('.wavepic').removeClass('hidden');
