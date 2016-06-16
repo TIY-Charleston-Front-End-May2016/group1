@@ -70,3 +70,8 @@ body {
     padding: 5%;
     margin: 1px;
 }
+
+win h1 {
+  color:white;
+  size: 7em;
+}
