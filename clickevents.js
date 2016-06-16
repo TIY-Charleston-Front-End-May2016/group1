@@ -28,7 +28,7 @@ var findingDory = {
             $('.characterselect').addClass('hidden');
             $('.seaweed').addClass('hidden');
             $('.current').addClass('hidden');
-            $('.abilities').removeClass('hidden');
+            // $('.abilities').removeClass('hidden');
 
             findingDory.userChoiceVals.forEach(function(element, index) {
                 $('ul').append(`<a class="ability${index + 1}" href="#"><li>${element}</li></a>`);
@@ -36,7 +36,7 @@ var findingDory = {
 
 
         });
-        $('ul, .treasurechest').on('click', 'a', function() {
+        $('.treasurechest ul').on('click', 'a', function() {
             console.log($(this).attr('class'))
             if ($(this).attr('class') === 'ability1') {
                 $('ul').addClass('hidden');
@@ -49,27 +49,26 @@ var findingDory = {
         $('.seaweed').on('click', function() {
             $('ul').removeClass('hidden');
         });
-        $('ul, .seaweed').on('click', 'a', function() {
+        $('.seaweed ul').on('click', 'a', function() {
             console.log($(this).attr('class'))
             if ($(this).attr('class') === 'ability2') {
                 $('ul').addClass('hidden');
                 $('.current').removeClass('hidden');
                 $('.seaweed').addClass('hidden');
-            }
+              }
         });
 
         $('.current').on('click', function() {
             $('ul').removeClass('hidden');
         });
-        $('ul, .current').on('click', 'a', function() {
+        $('.current ul').on('click', 'a', function() {
             console.log($(this).attr('class'))
             if ($(this).attr('class') === 'ability3') {
                 $('ul').addClass('hidden');
                 $('.current').addClass('hidden');
                 $('.treasurechest').addClass('hidden');
-                // $('.win').removeClass('hidden');
-
-            }
+                $('.win').removeClass('hidden');
+              } 
         });
 
 
