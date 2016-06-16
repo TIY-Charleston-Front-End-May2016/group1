@@ -1,17 +1,20 @@
-.seaweedpic{
+.seaweedpic {
+  display: inline-block;
   float: right;
   margin-top: 0;
   margin right: 15px;
   width: 25%;
 }
-.wavespic{
+.wavespic {
+  display: inline-block;
   float: right;
   margin-top: 0;
   margin right: 15px;
   width: 25%;
 
 }
-.treasurepic{
+.treasurepic {
+  display: inline-block;
   float: right;
   margin-top: 0;
   margin right: 15px;
